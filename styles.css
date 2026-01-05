@@ -60,6 +60,7 @@ body {
 .hero-avatar {
   width: clamp(160px, 20vw, 360px);
   border-radius: 50%;
+  border: solid 6px #1ecf5e;
 }
 
 .hero-title {
@@ -93,11 +94,10 @@ body {
   background: white;
   color: black;
   border-radius: 5%;
-  border: solid 0.5px white;
+  border: solid 2px white;
 }
 
-.card-container:hover,
-.hero-avatar:hover {
+.card-container:hover {
   border: solid 6px #1ecf5e;
   font-style: italic;
   cursor: pointer;
@@ -291,9 +291,8 @@ body {
 
 .cards-socials {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(auto, 1fr);
-  width: 100%;
   padding: 1rem;
   gap: clamp(2vw, 1.5rem, 4rem);
 }
@@ -386,10 +385,12 @@ body {
 
 .experience-container {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(4, 1fr);
   width: 100%;
-  gap: clamp(10px, 1vw, 1rem);
+  gap: 4vw;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .timeline-point-container {
@@ -399,23 +400,61 @@ body {
 }
 
 .timeline-point {
-  width: 14px;
-  height: 14px;
-  background: black;
-  border: solid 8px darkolivegreen;
+  width: clamp(80px, 10vw, 360px);
+  height: clamp(80px, 10vw, 360px);
+  background: white;
+  border: solid 0.5vw white;
   border-radius: 50%;
   opacity: 0.7;
-  z-index: 999;
 }
 
-.timeline-point-education {
-  width: 14px;
-  height: 14px;
-  background: white;
-  border: solid 8px #181822f1;
-  border-radius: 50%;
-  opacity: 0.7;
-  z-index: 999;
+.timeline-point.utm {
+  background: url(assets/utm.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.timeline-point.netone {
+  background: url(assets/netone.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.timeline-point.acn {
+  background: url(assets/acn.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.timeline-point.smesh {
+  background: url(assets/smesh.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.timeline-point.um {
+  background: url(assets/umalaya.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.timeline-point.tohoku {
+  background: url(assets/tohoku.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.timeline-point.forward-college {
+  background: url(assets/forwardcollege.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .timeline-box {
@@ -466,5 +505,9 @@ body {
 
   .hero-cards {
     justify-items: center;
+  }
+
+  .timeline-point {
+    transform: translateY(-50%);
   }
 }

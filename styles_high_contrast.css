@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  background: black;
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  background-color: black;
+}
+
+/* Global styles*/
+
+.hero,
+.projects,
+.education,
+.experience,
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  min-height: 100vh;
+}
+
+.project-header,
+.socials-header,
+.experience-header,
+.education-header {
+  font-size: clamp(3rem, 8vw, 6rem);
+}
+
+.card-subtitle {
+  font-size: clamp(2rem, 3vw, 4rem);
+}
+
+/* Main section (hero)*/
+
+.hero-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  padding: 1rem;
+}
+
+.hero-content {
+  padding: 10%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.hero-avatar {
+  width: clamp(160px, 20vw, 360px);
+  border-radius: 50%;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 4.5vw, 4.5rem);
+}
+
+.hero-subtitle {
+  font-size: clamp(2rem, 3vw, 4rem);
+  opacity: 0.85;
+}
+
+.hero-title,
+.hero-subtitle {
+  text-shadow: 2px 4px 2px darkolivegreen;
+}
+
+.hero-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  gap: clamp(2vw, 1.5rem, 4rem);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 45vh;
+  width: 30vw;
+  background: white;
+  color: black;
+  border-radius: 5%;
+  border: solid 6px white;
+}
+
+.card-container:hover,
+.hero-avatar:hover {
+  border: solid 6px #1ecf5e;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.card-container a {
+  font-size: clamp(2rem, 3vw, 4rem);
+  text-decoration: none;
+  color: white;
+}
+
+.card-content-projects,
+.card-content-experience,
+.card-content-education,
+.card-content-socials,
+.card-content-projects:hover,
+.card-content-experience:hover,
+.card-content-education:hover,
+.card-content-socials:hover {
+  background: darkolivegreen;
+  background-size: cover;
+  background-position: center;
+}
+
+/*Projects-specific*/
+
+.card-content-frontend,
+.card-content-python,
+.card-content-react,
+.card-content-c,
+.card-content-frontend:hover,
+.card-content-python:hover,
+.card-content-react:hover,
+.card-content-c:hover {
+  background: darkolivegreen;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem;
+}
+
+/* Socials-specific*/
+
+.cards-socials {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto, 1fr);
+  padding: 1rem;
+  margin: 1vw;
+  gap: clamp(2vw, 1.5rem, 4rem);
+}
+
+.card-content-github,
+.card-content-linkedin,
+.card-content-resume,
+.card-content-github:hover,
+.card-content-linkedin:hover,
+.card-content-resume:hover {
+  background: darkolivegreen;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem;
+}
+
+/*Experience and Education specific*/
+
+.experience-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
+  gap: 4vw;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.timeline-point-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-point {
+  width: clamp(80px, 10vw, 360px);
+  height: clamp(80px, 10vw, 360px);
+  background: white;
+  border: solid 0.5vw black;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.timeline-box {
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  font-size: clamp(2rem, 3vw, 4rem);
+}
+
+/*Tablet*/
+
+@media (max-width: 1080px) {
+  .hero {
+    min-height: 100vh;
+    height: auto;
+  }
+
+  .hero-container {
+    grid-template-columns: minmax(360px, 1fr);
+    align-items: center;
+  }
+
+  .hero-content {
+    margin-left: 1.5rem;
+  }
+
+  .hero-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    justify-items: center;
+  }
+
+  .card-container {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1.2;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .hero-cards {
+    justify-items: center;
+  }
+}
