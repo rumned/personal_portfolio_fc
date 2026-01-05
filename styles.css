@@ -34,7 +34,7 @@ body {
 }
 
 .card-subtitle {
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.25rem); 
 }
 
 /* Main section (hero)*/
@@ -511,6 +511,15 @@ body {
 
   .hero-cards {
     justify-items: center;
+  }
+
+  .card-container.card-content-frontend,
+  .card-container.card-content-python,
+  .card-container.card-content-react,
+  .card-container.card-content-c {
+    width: 60%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1.2;
   }
 
   .timeline-point {
