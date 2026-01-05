@@ -28,11 +28,11 @@ body {
 .socials-header,
 .experience-header,
 .education-header {
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(1rem, 8vw, 6rem);
 }
 
 .card-subtitle {
-  font-size: clamp(2rem, 3vw, 4rem);
+  font-size: clamp(1rem, 3vw, 4rem);
 }
 
 /* Main section (hero)*/
@@ -102,7 +102,7 @@ body {
 }
 
 .card-container a {
-  font-size: clamp(2rem, 3vw, 4rem);
+  font-size: clamp(1rem, 3vw, 4rem);
   text-decoration: none;
   color: white;
 }
@@ -199,7 +199,7 @@ body {
   align-items: center;
   padding: 1rem;
   color: white;
-  font-size: clamp(2rem, 3vw, 4rem);
+  font-size: clamp(1rem, 3vw, 4rem);
 }
 
 /*Tablet*/
@@ -243,4 +243,14 @@ body {
   .hero-cards {
     justify-items: center;
   }
+
+  .timeline-point-container{
+    transform:translateY(25%);
+  }
+
+  .timeline-box{
+    transform: translateX(-10%);
+  }
+
+
 }
