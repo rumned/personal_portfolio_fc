@@ -92,6 +92,7 @@ body {
   color: white;
   border-radius: 5%;
   border: solid 2px white;
+  padding:1rem;
 }
 
 .card-container:hover,
@@ -227,15 +228,6 @@ body {
     justify-items: center;
     align-items: center;
   }
-
-  .card-container.card-content-frontend,
-  .card-container.card-content-python,
-  .card-container.card-content-react,
-  .card-container.card-content-c {
-    width: 80%;
-    max-width: 400px;
-    aspect-ratio: 1 / 1.2;
-  }
 }
 
 /* Mobile */
@@ -263,10 +255,13 @@ body {
     transform: translateX(-10%);
   }
 
-   .card-container{
-    width: 80%;
-    max-width: 400px;
-    aspect-ratio: 1 / 1.2;
+  .card-container,
+  .card-container.card-content-frontend,
+  .card-container.card-content-python,
+  .card-container.card-content-react,
+  .card-container.card-content-c {
+    width: 80vw;
+    aspect-ratio: 1/0.8;
   }
 
 
