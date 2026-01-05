@@ -82,6 +82,12 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto, 1fr);
   gap: clamp(2vw, 1.5rem, 4rem);
+  font-size: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.hero-cards a {
+  text-decoration: none;
+  color: white;
 }
 
 .card-container {
@@ -92,7 +98,7 @@ body {
   height: 45vh;
   width: 30vw;
   background: white;
-  color: black;
+  color: white;
   border-radius: 5%;
   border: solid 2px white;
 }

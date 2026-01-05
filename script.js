@@ -2,6 +2,9 @@ let linkWOI = document.getElementById("github-woi");
 let linkPython = document.getElementById("github-python");
 let linkTask = document.getElementById("github-task");
 let linkC42 = document.getElementById("github-c42");
+let linkGithub = document.getElementById("link-github");
+let linkLinkedIn = document.getElementById("link-linkedin");
+let linkResume = document.getElementById("link-resume");
 const highContrast = document.getElementById("highcontrast");
 
 linkWOI.addEventListener("click", () => {
@@ -21,6 +24,21 @@ linkTask.addEventListener("click", () => {
 
 linkC42.addEventListener("click", () => {
   const link = linkC42.dataset.link;
+  window.open(link, "_blank");
+});
+
+linkGithub.addEventListener("click", () => {
+  const link = linkGithub.dataset.link;
+  window.open(link, "_blank");
+});
+
+linkLinkedIn.addEventListener("click", () => {
+  const link = linkLinkedIn.dataset.link;
+  window.open(link, "_blank");
+});
+
+linkResume.addEventListener("click", () => {
+  const link = linkResume.dataset.link;
   window.open(link, "_blank");
 });
 
