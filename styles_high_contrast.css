@@ -89,9 +89,9 @@ body {
   height: 45vh;
   width: 30vw;
   background: white;
-  color: black;
+  color: white;
   border-radius: 5%;
-  border: solid 6px white;
+  border: solid 2px white;
 }
 
 .card-container:hover,
